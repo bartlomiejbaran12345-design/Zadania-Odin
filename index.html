@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moje zadania – The Odin Project</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+
+      body {
+        font-family: Roboto, sans-serif;
+        background: #f5f5f5;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 48px 16px;
+      }
+
+      h1 {
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 8px;
+      }
+
+      .subtitle {
+        color: #888;
+        margin-bottom: 40px;
+        font-size: 1rem;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 20px;
+        width: 100%;
+        max-width: 900px;
+      }
+
+      a.card {
+        background: white;
+        border-radius: 12px;
+        padding: 28px 24px;
+        text-decoration: none;
+        color: #333;
+        box-shadow: 0 2px 8px rgba(0,0,0,.08);
+        transition: transform .15s, box-shadow .15s;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+
+      a.card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(0,0,0,.12);
+      }
+
+      .number {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #ddd;
+        min-width: 40px;
+      }
+
+      .info h2 {
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 4px;
+      }
+
+      .info p {
+        font-size: 0.85rem;
+        color: #999;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The Odin Project</h1>
+    <p class="subtitle">Moje zadania z CSS &amp; Flexbox</p>
+
+    <div class="grid">
+      <a class="card" href="./zadanie1/index.html">
+        <div class="number">01</div>
+        <div class="info">
+          <h2>Center This Div</h2>
+          <p>Centrowanie elementu flexboxem</p>
+        </div>
+      </a>
+      <a class="card" href="./zadanie2/index.html">
+        <div class="number">02</div>
+        <div class="info">
+          <h2>Flex Header</h2>
+          <p>Nagłówek z linkami po bokach i logo</p>
+        </div>
+      </a>
+      <a class="card" href="./zadanie3/index.html">
+        <div class="number">03</div>
+        <div class="info">
+          <h2>Flex Header 2</h2>
+          <p>Nagłówek z nawigacją i avatarem</p>
+        </div>
+      </a>
+      <a class="card" href="./zadanie4/index.html">
+        <div class="number">04</div>
+        <div class="info">
+          <h2>Information</h2>
+          <p>Siatka roślin z obrazkami</p>
+        </div>
+      </a>
+      <a class="card" href="./zadanie5/index.html">
+        <div class="number">05</div>
+        <div class="info">
+          <h2>Modal</h2>
+          <p>Okno dialogowe z przyciskami</p>
+        </div>
+      </a>
+      <a class="card" href="./zadanie6/index.html">
+        <div class="number">06</div>
+        <div class="info">
+          <h2>Layout</h2>
+          <p>Strona z headerem, footerem i wyszukiwarką</p>
+        </div>
+      </a>
+      <a class="card" href="./zadanie7/index.html">
+        <div class="number">07</div>
+        <div class="info">
+          <h2>Holy Grail</h2>
+          <p>Klasyczny layout z sidebarem i gridem</p>
+        </div>
+      </a>
+    </div>
+  </body>
+</html>
